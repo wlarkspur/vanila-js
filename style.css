@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background-color: bisque;
+}
+
+.app__clock {
+  color: red;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.login-form__username {
+  margin-bottom: 5px;
+}
+
+.login-form__password {
+  margin-bottom: 5px 0px;
+}
+
+.login-form__login {
+  margin: 5px 0px;
+}
+
+/**
+  .hidden {
+    display: none;
+  }
+  **/
