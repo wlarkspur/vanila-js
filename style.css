@@ -7,6 +7,10 @@ body {
   color: red;
 }
 
+.hidden {
+  display: none;
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
@@ -24,9 +28,3 @@ body {
 .login-form__login {
   margin: 5px 0px;
 }
-
-/**
-  .hidden {
-    display: none;
-  }
-  **/
