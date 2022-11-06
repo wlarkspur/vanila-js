@@ -39,17 +39,32 @@ function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASS);
 }
 
-function toDolist(event) {
+function deleteToDo(event) {
+  const li = event.target.parentElement;
+  console.log(event.target.parentElement);
+  li.remove();
+}
+
+function handleToDoBtn(event) {
   event.preventDefault();
-  const todoInput = input.value;
+  const newTodo = input.value;
+  input.value = "";
+  toDolist(newTodo);
+}
+
+function toDolist(newTodo) {
   const li = document.createElement("li");
   const span = document.createElement("span");
+  span.innerText = newTodo;
+  const button = document.createElement("button");
+  button.innerText = "❌";
+  button.addEventListener("click", deleteToDo);
   li.appendChild(span);
-  span.innerText = todoInput;
+  li.appendChild(button);
   tdlistUl.appendChild(li);
 }
 
 timer();
 setInterval(timer, 1000);
-btn.addEventListener("click", toDolist);
+btn.addEventListener("click", handleToDoBtn);
 loginFormLogin.addEventListener("click", handleLogin);
