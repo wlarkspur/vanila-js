@@ -1,10 +1,18 @@
 body {
   font-family: sans-serif;
-  background-color: bisque;
+  background-color: whitesmoke;
+  background-image: inherit;
+}
+
+.app {
+  display: flex;
+  margin: 0px 15px;
+  justify-content: center;
 }
 
 .app__clock {
   color: red;
+  margin-left: 10px;
 }
 
 .hidden {
@@ -27,4 +35,8 @@ body {
 
 .login-form__login {
   margin: 5px 0px;
+}
+
+img {
+  width: 100%;
 }

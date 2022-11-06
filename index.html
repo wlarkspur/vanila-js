@@ -10,38 +10,54 @@
   <body>
     <div class="app">
       <h1>Current Time</h1>
-      <h2 class="app__clock">00:00:00</h2>
+      <h1 class="app__clock">00:00:00</h1>
     </div>
 
     <h1 class="greeting hidden"></h1>
+
     <div class="login-hidden hidden">
       <form class="login-form">
         <input
           class="login-form__username"
           type="text"
           placeholder="username"
+          required
         />
-
-        <input class="login-form__login" type="submit" value="Login" />
       </form>
+      <input class="login-form__login" type="submit" value="Login" />
     </div>
 
+    <h2>To do list</h2>
     <div class="todolist">
-      <h2>To do list</h2>
-      <form class="todolist__list" action="">
-        <input class="todolist__input" type="text" />
+      <form class="todolist__list">
+        <input class="todolist__input" type="text" required />
         <input class="todolist__list__btn" type="submit" />
       </form>
-      <nav>
-        <ul class="todolist__ul"></ul>
-      </nav>
     </div>
+    <nav>
+      <ul class="todolist__ul"></ul>
+    </nav>
+
+    <div>
+      <form action="">
+        <input type="text" required />
+        <input type="submit" name="" id="" />
+      </form>
+    </div>
+
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
     <div id="weather">
       <span></span>
       <span></span>
     </div>
 
-    <script src="index.js"></script>
-    <script src="weather.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
   </body>
 </html>
