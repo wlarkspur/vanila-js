@@ -15,26 +15,21 @@ body {
   margin-left: 10px;
 }
 
+.login-form {
+  width: 10%;
+  margin-bottom: 5px;
+}
+
+.login-form__login {
+  width: 177px;
+}
+
 .hidden {
   display: none;
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
-
-.login-form__username {
-  margin-bottom: 5px;
-}
-
 .login-form__password {
   margin-bottom: 5px 0px;
-}
-
-.login-form__login {
-  margin: 5px 0px;
 }
 
 img {
